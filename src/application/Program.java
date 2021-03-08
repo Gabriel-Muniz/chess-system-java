@@ -3,10 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package application;
 
-import boardgame.Position;
+import chess.ChessMatch;
 
 /**
  *
@@ -14,12 +13,13 @@ import boardgame.Position;
  */
 public class Program {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-       Position pos = new Position(3, 5);
-        System.out.println(pos);
-    }
+   /**
+    * @param args the command line arguments
+    */
+   public static void main(String[] args) {
+      
+      ChessMatch chessMatch = new ChessMatch();
+      UI.printBoard(chessMatch.getPieces());
+   }
 
 }
